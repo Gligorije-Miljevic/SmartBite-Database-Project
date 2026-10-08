@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox spacing="10"
+      alignment="CENTER"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="controller.AdminCommentsController"
+      style="-fx-padding:20;">
+
+    <Label text="Prijavljeni komentari"
+           style="-fx-font-size:20px;"/>
+
+    <ListView fx:id="commentList"
+              prefHeight="300"
+              prefWidth="600"/>
+
+    <TextField fx:id="commentIdField"
+               promptText="ID komentara"/>
+
+    <TextField fx:id="reasonField"
+               promptText="Obrazloženje"/>
+
+    <HBox spacing="10" alignment="CENTER">
+
+        <Button text="Ukloni komentar"
+                onAction="#ukloniKomentar"/>
+
+        <Button text="Aktiviraj komentar"
+                onAction="#aktivirajKomentar"/>
+
+    </HBox>
+
+</VBox>

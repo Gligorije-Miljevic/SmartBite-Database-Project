@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+
+<VBox spacing="10"
+      alignment="CENTER"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="controller.ManageIngredientController"
+      style="-fx-padding: 20;">
+
+    <Label text="UPRAVLJANJE SASTOJCIMA"/>
+
+    <TextField fx:id="idField"
+               promptText="ID sastojka"/>
+
+    <TextArea fx:id="obrazlozenjeField"
+              promptText="Obrazloženje"/>
+
+    <HBox spacing="10">
+
+        <Button text="Ukloni sastojak"
+                onAction="#ukloni"/>
+
+        <Button text="Aktiviraj sastojak"
+                onAction="#aktiviraj"/>
+
+    </HBox>
+
+</VBox>

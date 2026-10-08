@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="controller.RecipeCommentsController">
+
+    <top>
+
+        <VBox spacing="10"
+              style="-fx-padding: 15;">
+
+            <Label fx:id="recipeTitle"
+                   style="-fx-font-size: 22px; -fx-font-weight: bold;"/>
+
+            <HBox spacing="10">
+
+                <TextField fx:id="commentField"
+                           promptText="Unesi komentar"/>
+
+                <Button text="Komentarisi"
+                        onAction="#dodajKomentar"/>
+
+
+            </HBox>
+
+            <HBox spacing="10">
+
+                <Button text="Prijavi komentar"
+                        onAction="#prijaviKomentar"/>
+
+                <Button text="Sacuvaj recept"
+                        onAction="#sacuvajRecept"/>
+
+                <Button text="Ocijeni recept"
+                        onAction="#ocijeniRecept"/>
+
+            </HBox>
+
+        </VBox>
+
+    </top>
+
+    <center>
+
+        <ListView fx:id="commentList"/>
+
+    </center>
+
+</BorderPane>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+
+<ScrollPane fitToWidth="true"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="controller.ProfileController">
+
+    <content>
+
+        <VBox spacing="10">
+
+            <padding>
+                <Insets top="20"
+                        right="20"
+                        bottom="20"
+                        left="20"/>
+            </padding>
+
+            <Label text="Moj profil"
+                   style="-fx-font-size: 22px; -fx-font-weight: bold;"/>
+
+            <Label text="Korisnicko ime"/>
+            <TextField fx:id="usernameField"
+                       editable="false"/>
+
+            <Label text="Email"/>
+            <TextField fx:id="emailField"
+                       editable="false"/>
+
+            <Label text="Ime"/>
+            <TextField fx:id="imeField"
+                       editable="false"/>
+
+            <Label text="Prezime"/>
+            <TextField fx:id="prezimeField"
+                       editable="false"/>
+
+            <Label text="Starost"/>
+            <TextField fx:id="starostField"
+                       editable="false"/>
+
+            <Label text="Visina"/>
+            <TextField fx:id="heightField"
+                       editable="false"/>
+
+            <Label text="Tezina"/>
+            <TextField fx:id="weightField"
+                       editable="false"/>
+
+            <Label text="Nivo aktivnosti"/>
+            <TextField fx:id="aktivnostField"
+                       editable="false"/>
+
+            <Label text="Ciljana tezina"/>
+            <TextField fx:id="ciljanaTezinaField"
+                       editable="false"/>
+
+            <Label text="Pol"/>
+            <TextField fx:id="polField"
+                       editable="false"/>
+
+            <Button text="Omoguci izmjenu"
+                    onAction="#omoguciIzmjenu"/>
+
+            <Button text="Sacuvaj"
+                    onAction="#sacuvajPodatke"/>
+
+            <Label fx:id="messageLabel"/>
+
+        </VBox>
+
+    </content>
+
+</ScrollPane>

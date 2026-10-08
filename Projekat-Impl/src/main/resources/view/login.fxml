@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="15"
+      alignment="CENTER"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="controller.LoginController">
+
+    <padding>
+        <Insets top="40" right="40" bottom="40" left="40"/>
+    </padding>
+
+    <Label text="Sistem za recepte"
+           style="-fx-font-size: 26px; -fx-font-weight: bold;" />
+
+    <TextField fx:id="usernameField"
+               promptText="Korisničko ime"/>
+
+    <PasswordField fx:id="passwordField"
+                   promptText="Lozinka"/>
+
+    <HBox spacing="10" alignment="CENTER">
+
+        <Button text="Prijava Klijenta"
+                onAction="#loginClient"/>
+
+        <Button text="Prijava Admina"
+                onAction="#loginAdmin"/>
+
+    </HBox>
+
+    <Button text="Registracija"
+            onAction="#openRegister"/>
+
+    <Label fx:id="messageLabel"/>
+
+</VBox>

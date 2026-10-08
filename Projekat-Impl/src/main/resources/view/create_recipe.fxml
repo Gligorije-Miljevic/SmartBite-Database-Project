@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<ScrollPane fitToWidth="true"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="controller.CreateRecipeController">
+
+    <content>
+
+        <VBox spacing="10">
+
+            <padding>
+                <Insets top="20"
+                        right="20"
+                        bottom="20"
+                        left="20"/>
+            </padding>
+
+            <Label text="Kreiranje Recepta"
+                   style="-fx-font-size: 22px; -fx-font-weight: bold;" />
+
+            <TextField fx:id="nameField"
+                       promptText="Naziv recepta"/>
+
+            <TextArea fx:id="descriptionArea"
+                      promptText="Opis"/>
+
+            <TextArea fx:id="instructionArea"
+                      promptText="Detaljno uputstvo"/>
+
+            <Label text="Pretraga sastojaka"/>
+
+            <HBox spacing="10">
+
+                <TextField fx:id="searchIngredientField"
+                           promptText="Naziv sastojka"/>
+
+                <Button text="Trazi"
+                        onAction="#pretragaSastojaka"/>
+
+            </HBox>
+
+            <ListView fx:id="ingredientList"
+                      prefHeight="150"/>
+
+            <HBox spacing="10">
+
+                <TextField fx:id="quantityField"
+                           promptText="Kolicina"/>
+
+                <Button text="Dodaj sastojak"
+                        onAction="#dodajSastojak"/>
+
+            </HBox>
+
+            <Label text="Dodani sastojci"/>
+
+            <TextArea fx:id="ingredientsArea"
+                      editable="false"
+                      prefHeight="150"/>
+
+            <Button text="Sacuvaj recept"
+                    onAction="#saveRecipe"/>
+
+            <Label fx:id="messageLabel"/>
+
+        </VBox>
+
+    </content>
+
+</ScrollPane>

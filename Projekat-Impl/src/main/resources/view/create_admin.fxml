@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox spacing="10"
+      alignment="CENTER"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="controller.CreateAdminController"
+      style="-fx-padding: 20;">
+
+    <Label text="KREIRANJE ADMINA"/>
+
+    <TextField fx:id="imeField" promptText="Ime"/>
+    <TextField fx:id="prezimeField" promptText="Prezime"/>
+    <TextField fx:id="emailField" promptText="Email"/>
+    <TextField fx:id="telefonField" promptText="Telefon"/>
+    <TextField fx:id="usernameField" promptText="Username"/>
+
+    <PasswordField fx:id="passwordField"
+                   promptText="Lozinka"/>
+
+    <Button text="Kreiraj administratora"
+            onAction="#kreiraj"/>
+
+</VBox>

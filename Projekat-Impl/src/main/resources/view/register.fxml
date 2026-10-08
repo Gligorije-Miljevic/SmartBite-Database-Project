@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<ScrollPane fitToWidth="true"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="controller.RegisterController">
+
+    <content>
+
+        <VBox spacing="10">
+
+            <padding>
+                <Insets top="20" right="20" bottom="20" left="20"/>
+            </padding>
+
+            <Label text="Registracija"/>
+
+            <TextField fx:id="imeField" promptText="Ime"/>
+            <TextField fx:id="prezimeField" promptText="Prezime"/>
+            <TextField fx:id="emailField" promptText="Email"/>
+            <TextField fx:id="telefonField" promptText="Telefon"/>
+            <TextField fx:id="usernameField" promptText="Username"/>
+            <TextField fx:id="passwordField" promptText="Lozinka"/>
+
+            <TextField fx:id="starostField" promptText="Starost"/>
+            <TextField fx:id="polField" promptText="Pol [M,Z]"/>
+            <TextField fx:id="visinaField" promptText="Visina"/>
+            <TextField fx:id="tezinaField" promptText="Tezina"/>
+            <TextField fx:id="aktivnostField" promptText="Aktivnost [MALO,SREDNJE,VISOKO]"/>
+            <TextField fx:id="ciljField" promptText="Ciljana tezina"/>
+            <TextField fx:id="datumField" promptText="Datum yyyy-mm-dd"/>
+
+            <Button text="Registruj se"
+                    onAction="#registracija"/>
+
+            <Label fx:id="messageLabel"/>
+
+        </VBox>
+
+    </content>
+
+</ScrollPane>

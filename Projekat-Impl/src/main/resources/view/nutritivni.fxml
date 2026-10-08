@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox spacing="15"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="controller.NutritivniController">
+
+    <padding>
+        <Insets top="20"
+                right="20"
+                bottom="20"
+                left="20"/>
+    </padding>
+
+    <Label text="Nutritivni podaci"
+           style="-fx-font-size: 24px; -fx-font-weight: bold;"/>
+
+    <Label fx:id="kalorijeLabel"/>
+
+    <Label fx:id="proteiniLabel"/>
+
+    <Label fx:id="uhLabel"/>
+
+    <Label fx:id="mastiLabel"/>
+
+</VBox>
